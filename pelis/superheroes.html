@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SUPERHEROES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .contenedor {
+            height: 100%;
+        }
+        #player {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="player"></div>
+    </div>
+
+    <script>
+        var player = new Clappr.Player({
+            source: "https://h6r4gr.cfglobalcdn.com/silverlight/secip/205210/7303/wD2C503b9Q1D3dZrJTXV2Q/MTgxLjk0LjEzMi4yNDU=/1702347263/hls-vod-s009/flv/api/files/videos/2023/12/09/17020960952my7a.mp4.m3u8",
+            title: 'NOMBRE',
+            height: "100%",
+            width: "100%",
+            parentId: "#player"
+        });
+
+        player.attachTo(playerElement);
+    </script>
+</body>
+</html>
